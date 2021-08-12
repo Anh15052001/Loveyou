@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="robots" content="index,nofollow" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<title>Dương Việt Anh - 20194220 </title>
+		<link href='http://fonts.googleapis.com/css?family=Rum+Raisin' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="css/Main.css" />
+		<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+		<script type="text/javascript" src="js/Main.js"></script>
+	</head>
+	<body>
+		<span class="rotateHint hide"></span>
+		<span class="rotateBg hide"></span>
+		<article id="start">
+			<h1>Kiểm tra độ Yêu nhé Edit by: Dương Việt Anh !</h1>
+			<section class="progress">
+				<span class="percent">100%</span>
+				<img src="img/Heart.png" alt="" />
+				<span class="fill"></span>
+			</section>
+			<p><input value="Test nào!" name="start" type="button" onclick="start()" class="button" /></p>
+			<p class="hint">Cảnh báo: Đây chỉ là một trò chơi, sử dụng phân tích trí tuệ tình cảm</p>
+
+			<p class="developedBy">Dương Việt Anh</p>
+		</article>
+		<article id="enterNames" class="hide">
+			<h1>Kiểm tra độ Yêu nhé !</h1>
+			<p>Nhập vào tên hai bạn và tuổi con gì (ví dụ tôi tuổi con rắn hợp với chó, mèo, lợn, gà...)</p>
+			<form name="loveform">
+				<fieldset>
+					<label>
+						<strong>1. Tên Nam:</strong>
+	  					<input name="name1" type="text" size="20" placeholder="Nhập vào đây">
+	  				</label>
+					<label>
+						<strong>Tuổi con</strong>
+						<input name="name3" type="text" size="20" placeholder="Nhập vào đây">
+					</label>
+
+	  				<span class="and">+</span>
+	  				<label>
+	  					<strong>2. Tên Nữ:</strong>
+	  					<input name="name2" type="text" size="20" placeholder="Nhập vào đây">
+	  				</label>
+					<label>
+						<strong>Tuổi con</strong>
+						<input name="name4" type="text" size="20" placeholder="Nhập vào đây">
+					</label>
+	  			</fieldset>
+
+				<input value="Trả Kết quả!" name="calculate" class="button" type="button" onclick="loveTest()" />
+			</form>
+			<h2>Mọi thông tin phản hồi vietanhviencntt@gmail.com</h2>
+			<h3>Hotline: 0986097736</h3>
+		</article>
+		<article id="game" class="hide">
+			<h1>Kiểm tra độ Yêu nhé !</h1>
+			<span class="happyGuy hide"></span>
+			<span class="okayGuy hide"></span>
+			<span class="sadGuy hide"></span>
+			<section class="progress">
+				<span class="hearts top"></span>
+				<span class="hearts bottom"></span>
+				<span class="names"></span>
+				<span class="percent"></span>
+				<img src="img/Heart.png" alt="" />
+				<span class="fill"></span>
+			</section>
+			<p class="result"></p>
+			<form name="loveform">
+				<input value="Kiểm tra lần nữa!" name="reset" class="button hide" type="button" onclick="clearHeart()" />
+			</form>
+		</article>
+		<script type="text/javascript">
+   			// checkPortrait();
+
+   			// Start calculation if names are given via hash
+   			var hash = window.location.hash.replace("#", "");
+			var hashSplit = hash.split('+');
+
+			hashName1 = hashSplit[0];
+			hashName2 = hashSplit[1];
+
+			if(hashName1 != '' && hashName2 != '') {
+				loveTest(hashName1, hashName2);
+			}
+   		</script>
+	</body>
+</html>

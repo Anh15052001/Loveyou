@@ -1,0 +1,288 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffe6f8; }
+
+body {
+  font-family: 'Rum Raisin', sans-serif;
+  font-size: 100%;
+  color: #8f0769;
+  	/*
+  	.rotateHint {
+  		display: block;
+  		width: 280px;
+  		height: 280px;
+  
+  		position: fixed;
+  		top: 20px;
+  		left: 50%;
+  		z-index: 100;
+  		margin-left: -140px;
+  		
+  		background: url('../img/Rotate.anim.gif') no-repeat 0 0;
+  	}
+  
+  	.rotateBg {
+  		display: block;
+  		width: 100%;
+  
+  		position: fixed;
+  		top: 0;
+  		bottom: 0;
+  		z-index: 20;
+  
+  		background-color: #000;
+  		opacity: 0.8;
+  	}
+  	*/
+  /*
+  &.bad {
+  	h1, .result, fieldset input, fieldset .and { color: #2b0000; }
+  }
+  &.okay {
+  	h1, .result, fieldset input, fieldset .and { color: #690b0b; }
+  }
+  &.good {
+  	h1, .result, fieldset input, fieldset .and { color: #d21010; }
+  }
+  */ }
+  body input[type='text'], body textarea {
+    font-size: 1em; }
+  body article {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    text-align: center; }
+    body article .button {
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font: inherit;
+      background-color: transparent;
+      cursor: pointer;
+      overflow: visible;
+      outline: none;
+      background-color: #792461;
+      border-top: 1px solid #9d3981;
+      border-bottom: 3px solid #581846;
+      padding: 5px 30px;
+      color: #fff;
+      text-shadow: 0 1px 0 #6b1e55;
+      font-size: 100%; }
+      body article .button:active {
+        outline: none; }
+      body article .button::-moz-focus-inner {
+        border: 0;
+        padding: 0; }
+    body article h1 {
+      display: inline-block;
+      font-size: 260%;
+      margin: 10px 0 10px 0;
+      position: relative; }
+      body article h1:before {
+        content: '';
+        display: block;
+        width: 83px;
+        height: 69px;
+        position: absolute;
+        z-index: 3;
+        top: -9px;
+        left: -51px;
+        background: url("../img/Hearts.png") no-repeat 0 0;
+        background-size: 60% 60%; }
+      body article h1:after {
+        content: '';
+        display: block;
+        width: 83px;
+        height: 69px;
+        position: absolute;
+        z-index: 3;
+        bottom: -45px;
+        right: -90px;
+        background: url("../img/Hearts.png") no-repeat 0 0;
+        background-size: 40% 40%; }
+    body article#start .hint {
+      display: block;
+      margin: 5px 0 0 0;
+      padding: 0 10px;
+      font-size: 100%;
+      color: #bc62a3; }
+    body article#start .button {
+      font-size: 140%; }
+    body article#start .progress {
+      width: 60%; }
+      body article#start .progress .percent {
+        top: 20%; }
+      body article#start .progress .fill {
+        height: 100%;
+        border-top: 0; }
+    body article#start .developedBy {
+      display: inline-block;
+      background: url("../img/SpielAffeLogo.png") no-repeat 0 2px;
+      background-size: 100px auto;
+      padding-left: 110px; }
+    body article#enterNames p {
+      margin-top: 0;
+      font-size: 120%;
+      color: #bc62a3; }
+      body article#enterNames p.error {
+        color: #ff0000; }
+    body article#enterNames form fieldset {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      border: 0;
+      padding: 0;
+      text-align: center;
+      white-space: nowrap; }
+      body article#enterNames form fieldset label {
+        display: block;
+        width: 100%; }
+        body article#enterNames form fieldset label strong {
+          display: block;
+          font-size: 120%; }
+        body article#enterNames form fieldset label input {
+          width: 90%;
+          padding: 3px 0;
+          border: 1px solid #bc62a3;
+          font-size: 100%;
+          color: #8f0769;
+          text-align: center; }
+      body article#enterNames form fieldset .and {
+        display: block;
+        padding: 5px 0;
+        line-height: 70%;
+        font-size: 240%; }
+    body article#enterNames form input[name="calculate"] {
+      margin-top: 10px; }
+    body article#game {
+      position: relative; }
+      body article#game h1 {
+        font-size: 180%; }
+      body article#game .progress {
+        width: 75%; }
+      body article#game .happyGuy, body article#game .sadGuy, body article#game .okayGuy {
+        display: block;
+        width: 141px;
+        height: 205px;
+        position: absolute;
+        top: 50px;
+        z-index: 3; }
+      body article#game .happyGuy {
+        left: -10px;
+        background: url("../img/HappyGuy.png") no-repeat 0 0; }
+      body article#game .okayGuy {
+        right: -10px;
+        background: url("../img/OkayGuy.png") no-repeat 0 0; }
+      body article#game .sadGuy {
+        right: -10px;
+        background: url("../img/SadGuy.png") no-repeat 0 0; }
+    body article form {
+      display: block;
+      width: 100%;
+      padding-top: 10px;
+      text-align: center; }
+    body article .progress {
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      background-color: #d23aa7; }
+      body article .progress .fill {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        border-top: 1px solid #db6a81;
+        background-color: #770019;
+        animation: bgGlow 3s;
+        -moz-animation: bgGlow 3s infinite;
+        /* Firefox */
+        -webkit-animation: bgGlow 3s infinite;
+        /* Safari and Chrome */
+    			/*
+				&.bad    { background-color: #2b0000; border-color: #571010; }
+				&.okay   { background-color: #690b0b; border-color: #8d1818; }
+				&.good   { background-color: #d21010; border-color: #f14343; }
+				*/ }
+      body article .progress .names {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        z-index: 3;
+        color: #fff;
+        text-shadow: 0 2px 0 #333;
+        text-align: center;
+        font-size: 120%;
+        white-space: nowrap;
+        text-transform: uppercase; }
+      body article .progress .hearts {
+        display: none;
+        width: 83px;
+        height: 69px;
+        position: absolute;
+        z-index: 3;
+        background: url("../img/Hearts.png") no-repeat 0 0; }
+        body article .progress .hearts.top {
+          top: -5%;
+          right: -7%; }
+        body article .progress .hearts.bottom {
+          bottom: 4%;
+          right: 5%; }
+      body article .progress .percent {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        left: 0;
+        z-index: 3;
+        color: #fff;
+        text-shadow: 0 2px 0 #333;
+        text-align: center;
+        font-size: 380%; }
+      body article .progress img {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2; }
+    body article .result {
+      display: none;
+      margin: 0;
+      padding: 0 10px;
+      font-size: 120%;
+      text-align: center; }
+      body article .result.error {
+        color: #9b0000; }
+    body article .startText {
+      display: block;
+      margin: 0;
+      padding: 0 10px;
+      font-size: 90%;
+      text-align: center;
+      line-height: 110%; }
+  body .hide {
+    display: none !important; }
+
+@-moz-keyframes bgGlow {
+  0% {
+    background-color: #770019; }
+
+  50% {
+    background-color: #ff0000; }
+
+  100% {
+    background-color: #770019; } }
+
+@-webkit-keyframes bgGlow {
+  0% {
+    background-color: #770019; }
+
+  50% {
+    background-color: #ff0000; }
+
+  100% {
+    background-color: #770019; } }
